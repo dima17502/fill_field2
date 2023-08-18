@@ -14,7 +14,7 @@ bridge.send("VKWebAppInit", {});
 
 
 */
-alert(2);
+
 
 var game_field_size = 600;
 var vk_width = 900;
@@ -24,7 +24,7 @@ var colors = ["#d22","#3d3","blue","#aaa","yellow","purple"];
 var salt = new Date();
 var user_area = [1];
 var area_color = "";
-var max_attempts = 3;
+var max_attempts = 25;
 var user_attempt = 1;
 var cells_in_row = parseInt(game_field_size /cell_size);
 var cells_in_field = cells_in_row * cells_in_row;
@@ -52,7 +52,7 @@ function set_body()
     const eframe = document.createElement("div");
     eframe.id = "window";
     eframe.position = "absolute";
-    eframe.style.border = "1px solid red";
+    //eframe.style.border = "1px solid red";
     eframe.style.width = vk_width + "px";
     eframe.style.height = vk_height + "px";
     eframe.style.background = "url('images/back.jpg')";
