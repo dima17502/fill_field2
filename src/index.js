@@ -216,7 +216,6 @@ function mouse_out_choice()
     yesb.style.color = "black";
     sureb.style.background = "#77c";
     sureb.style.color = "black";
-    
 }
 
 function restart(event)
